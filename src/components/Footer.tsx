@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Building2, Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Phone, Linkedin, Twitter, Facebook, Youtube, Award, ArrowRight } from 'lucide-react'
 
 const navigationLinks = [
   { name: 'Home', href: '/' },
@@ -15,52 +15,61 @@ const socialLinks = [
   { name: 'LinkedIn', href: '#', icon: Linkedin },
   { name: 'Twitter', href: '#', icon: Twitter },
   { name: 'Facebook', href: '#', icon: Facebook },
+  { name: 'YouTube', href: '#', icon: Youtube },
+]
+
+const serviceLinks = [
+  { name: 'PPP Advisory', href: '/services#ppp-advisory' },
+  { name: 'Sustainability & Carbon Services', href: '/services#sustainability' },
+  { name: 'Strategic Advisory', href: '/services#strategic-advisory' },
+  { name: 'Digital Transformation', href: '/services#digital-transformation' },
+]
+
+const productLinks = [
+  { name: 'Products Overview', href: '/sustainability#product' },
+  { name: 'GHG Tracking System', href: '/sustainability#product' },
+]
+
+const partnerLinks = [
+  { name: 'Carbon Compass', href: 'https://www.carboncompass.com/' },
+  { name: 'Earthood', href: 'https://www.earthood.com/' },
 ]
 
 export default function Footer() {
   return (
-    <footer className="bg-neutral-white border-t border-neutral-medium-gray">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-          {/* Company Info */}
-          <div className="sm:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <Building2 className="w-6 h-6 text-accent-green" />
-              <span className="text-xl font-bold text-primary-dark">CCMG</span>
+    <footer className="relative bg-gradient-to-b from-accent-dark to-neutral-charcoal text-neutral-white border-t border-accent-green/20">
+      <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
+          {/* About */}
+          <div>
+            <div className="mb-4">
+              <span className="text-xl font-semibold tracking-tight">CCMG</span>
             </div>
-            <p className="text-neutral-dark-gray text-sm sm:text-base leading-relaxed mb-4 sm:mb-6 max-w-md">
-              Colombo Consultants & Management Group — connecting insight to impact across Sri Lanka.
-              Practical advice. Proven delivery.
+            <h3 className="sr-only">About CCMG</h3>
+            <p className="text-sm leading-relaxed text-white/80 mb-4 max-w-md">
+              Colombo Consultants & Management Group (CCMG) is a boutique advisory and transaction partner helping governments, businesses, and development agencies structure sustainable, bankable, and resilient infrastructure projects in Sri Lanka and the region.
             </p>
-            <div className="space-y-2 sm:space-y-3">
-              <div className="flex items-start gap-2 text-sm text-neutral-dark-gray">
-                <MapPin className="w-4 h-4 text-accent-green mt-0.5 flex-shrink-0" />
-                <span className="leading-relaxed">123 Galle Road, Colombo 03, Sri Lanka</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-neutral-dark-gray">
-                <Phone className="w-4 h-4 text-accent-green flex-shrink-0" />
-                <a href="tel:+94112345678" className="hover:text-accent-green transition-colors">
+            <div className="space-y-3">
+              <div className="flex items-center gap-2 text-sm text-white/80">
+                <Phone className="w-4 h-4 text-accent-gold flex-shrink-0" />
+                <a href="tel:+94112345678" className="hover:underline hover:text-text-accent transition-colors">
                   +94 11 234 5678
                 </a>
               </div>
-              <div className="flex items-center gap-2 text-sm text-neutral-dark-gray">
-                <Mail className="w-4 h-4 text-accent-green flex-shrink-0" />
-                <a href="mailto:info@ccmg.lk" className="hover:text-accent-green transition-colors">
-                  info@ccmg.lk
-                </a>
-              </div>
+              
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-primary-dark font-semibold mb-3 sm:mb-4 text-base sm:text-lg">Quick Links</h3>
-            <ul className="space-y-2 sm:space-y-3">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary mb-3">Quick Links</h3>
+            <ul className="space-y-2.5">
               {navigationLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-sm sm:text-base text-neutral-dark-gray hover:text-accent-green transition-colors duration-normal block py-1"
+                    className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors duration-normal inline-flex items-center gap-1"
                   >
                     {link.name}
                   </Link>
@@ -69,47 +78,86 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact & Social */}
+          {/* Services & Products */}
           <div>
-            <h3 className="text-primary-dark font-semibold mb-3 sm:mb-4 text-base sm:text-lg">Connect With Us</h3>
-            <div className="flex gap-3 mb-4">
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary mb-3">Services</h3>
+            <ul className="space-y-2.5 mb-5">
+              {serviceLinks.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors duration-normal">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h4 className="text-xs font-semibold uppercase tracking-wider text-text-secondary mb-2">Products</h4>
+            <ul className="space-y-2.5">
+              {productLinks.map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors duration-normal">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Partners */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary mb-3">Partners</h3>
+            <ul className="space-y-2.5">
+              {partnerLinks.map((partner) => (
+                <li key={partner.name}>
+                  <a href={partner.href} target="_blank" rel="noopener noreferrer" className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors duration-normal">
+                    {partner.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Connect */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-text-secondary mb-3">Connect With Us</h3>
+            <p className="text-sm text-white/80 mb-4">Follow our journey in building sustainable infrastructure.</p>
+            <div className="flex flex-wrap gap-3 mb-5">
               {socialLinks.map((social) => {
                 const Icon = social.icon
                 return (
                   <a
                     key={social.name}
                     href={social.href}
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green hover:bg-accent-green hover:text-neutral-white transition-all duration-normal"
                     aria-label={social.name}
+                    className="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-accent-gold/40 bg-white/5 backdrop-blur flex items-center justify-center text-text-accent hover:bg-accent-green hover:text-neutral-white hover:border-accent-gold transition-all duration-normal"
                   >
-                    <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <Icon className="w-4 h-4" />
                   </a>
                 )
               })}
             </div>
-            
-            {/* Mobile Contact CTA */}
             <div className="sm:hidden">
-              <Link
-                href="/contact"
-                className="inline-block bg-accent-green text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-accent-dark-green transition-colors"
-              >
-                Get in Touch
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-accent-green text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-accent-dark transition-colors">
+                Get in Touch <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>
         </div>
 
+        
+
         {/* Bottom Bar */}
-        <div className="border-t border-neutral-medium-gray mt-6 sm:mt-8 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-neutral-dark-gray text-center sm:text-left">
-            © {new Date().getFullYear()} Colombo Consultants & Management Group. All rights reserved.
-          </p>
+        <div className="mt-8 lg:mt-10 pt-6 border-t border-white/10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div className="text-sm text-white/70">Built with integrity in Sri Lanka · Global standards, local trust</div>
+          <div className="flex items-center gap-2 text-sm text-white/80">
+            <Award className="w-4 h-4 text-accent-gold" />
+            <span>Gold Standard Partner</span>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
-            <Link href="/privacy" className="text-sm text-neutral-dark-gray hover:text-accent-green transition-colors">
+            <p className="text-sm text-white/70">© {new Date().getFullYear()} Colombo Consultants & Management Group.</p>
+            <Link href="/privacy" className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-sm text-neutral-dark-gray hover:text-accent-green transition-colors">
+            <Link href="/terms" className="text-sm text-white/80 hover:text-text-accent hover:underline underline-offset-4 transition-colors">
               Terms of Service
             </Link>
           </div>
@@ -117,4 +165,4 @@ export default function Footer() {
       </div>
     </footer>
   )
-} 
+}

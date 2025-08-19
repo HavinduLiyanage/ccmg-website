@@ -6,7 +6,7 @@ import Analytics from '@/components/Analytics'
 import CookieConsent from '@/components/CookieConsent'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ccmg.lk'),
+  metadataBase: new URL('https://colomboconsultants.lk'),
   title: {
     default: 'CCMG - Colombo Consultants & Management Group',
     template: '%s | CCMG'
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://ccmg.lk',
+    url: 'https://colomboconsultants.lk',
     siteName: 'CCMG - Colombo Consultants & Management Group',
     title: 'CCMG - Sri Lanka\'s Leading Advisory Partner',
     description: 'Connecting insight to impact across PPP, sustainability, and digital transformation. Expert consulting services for infrastructure, ESG, and strategic partnerships.',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     yahoo: 'your-yahoo-verification-code',
   },
   alternates: {
-    canonical: 'https://ccmg.lk',
+    canonical: 'https://colomboconsultants.lk',
   },
 }
 

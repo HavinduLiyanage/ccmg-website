@@ -2,16 +2,9 @@
 
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Building2, Linkedin, Twitter, Facebook } from 'lucide-react'
+import { Phone, Mail, Clock, Send, CheckCircle, Linkedin, Twitter, Facebook } from 'lucide-react'
 
 const contactInfo = [
-  {
-    icon: MapPin,
-    title: 'Visit Our Office',
-    details: ['123 Galle Road, Colombo 03', 'Sri Lanka 00300'],
-    link: '#',
-    linkText: 'Get Directions'
-  },
   {
     icon: Phone,
     title: 'Call Us',
@@ -104,7 +97,7 @@ export default function ContactPage() {
               Get in <span className="text-accent-green">Touch</span>
             </h1>
             <p className="text-lg text-neutral-dark-gray leading-relaxed mb-8">
-              Tell us your challenge and goals. We’ll connect you to the right expertise and a clear plan
+              Tell us your challenge and goals. We&apos;ll connect you to the right expertise and a clear plan
               for confident execution.
             </p>
           </motion.div>
@@ -114,7 +107,7 @@ export default function ContactPage() {
       {/* Contact Information */}
       <section className="bg-primary-light py-16">
         <div className="section-container">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {contactInfo.map((info, index) => {
               const Icon = info.icon
               return (
@@ -127,7 +120,7 @@ export default function ContactPage() {
                   viewport={{ once: true }}
                 >
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-accent-green/10 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:bg-accent-green/20 transition-colors duration-normal">
-                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-accent-green" />
+                    <Icon className="w-5 h-5 sm:w-6 sm:w-6 text-accent-green" />
                   </div>
                   <h3 className="text-base sm:text-lg font-semibold text-primary-dark mb-2 sm:mb-3">{info.title}</h3>
                   <div className="space-y-1 mb-3 sm:mb-4">
@@ -148,14 +141,13 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Form & Map */}
+      {/* Contact Form */}
       <section className="bg-neutral-white py-16">
         <div className="section-container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
+          <div className="max-w-2xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
@@ -294,79 +286,6 @@ export default function ContactPage() {
                     </button>
                   </form>
                 )}
-              </div>
-            </motion.div>
-
-            {/* Map & Additional Info */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              {/* Map Placeholder */}
-              <div className="bg-neutral-medium-gray rounded-lg h-64 mb-6 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-neutral-dark-gray mx-auto mb-2" />
-                  <p className="text-neutral-dark-gray">Interactive Map</p>
-                  <p className="text-sm text-neutral-dark-gray">123 Galle Road, Colombo 03</p>
-                </div>
-              </div>
-
-              {/* Office Info */}
-              <div className="space-y-6">
-                <div className="card">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Building2 className="w-6 h-6 text-accent-green" />
-                    <h3 className="text-lg font-semibold text-primary-dark">Our Office</h3>
-                  </div>
-                  <p className="text-neutral-dark-gray text-sm leading-relaxed mb-4">
-                    Visit our modern office space in the heart of Colombo. We&apos;re easily accessible 
-                    by public transport and have parking facilities available for visitors.
-                  </p>
-                  <div className="space-y-2 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-neutral-dark-gray">Parking:</span>
-                      <span className="text-primary-dark">Available</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-neutral-dark-gray">Accessibility:</span>
-                      <span className="text-primary-dark">Wheelchair Accessible</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-neutral-dark-gray">Languages:</span>
-                      <span className="text-primary-dark">English, Sinhala, Tamil</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Social Links */}
-                <div className="card">
-                  <h3 className="text-lg font-semibold text-primary-dark mb-4">Connect With Us</h3>
-                  <div className="flex gap-3">
-                    <a
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green hover:bg-accent-green hover:text-neutral-white transition-all duration-normal"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green hover:bg-accent-green hover:text-neutral-white transition-all duration-normal"
-                    >
-                      <Twitter className="w-5 h-5" />
-                    </a>
-                    <a
-                      href="#"
-                      className="w-10 h-10 rounded-full bg-accent-green/10 flex items-center justify-center text-accent-green hover:bg-accent-green hover:text-neutral-white transition-all duration-normal"
-                    >
-                      <Facebook className="w-5 h-5" />
-                    </a>
-                  </div>
-                  <p className="text-sm text-neutral-dark-gray mt-4">
-                    Follow us for the latest updates on our projects, insights, and industry news.
-                  </p>
-                </div>
               </div>
             </motion.div>
           </div>

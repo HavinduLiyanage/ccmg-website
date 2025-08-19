@@ -19,7 +19,6 @@ type Project = {
   client?: string;
   funder?: string;
   contractor?: string;
-  location?: string;
   year?: string;
   cardText: string;
   description: string;
@@ -36,7 +35,6 @@ const PROJECTS: Project[] = [
     client: "Government of Sri Lanka",
     funder: "Asian Development Bank",
     contractor: "China State",
-    location: "Mahaweli River Basin, Sri Lanka",
     cardText: "Strengthening Sri Lanka's water security through irrigation and system upgrades.",
     description:
       "The Mahaweli Water Security Investment Program (MWSIP), supported by the Asian Development Bank, focuses on enhancing water availability, irrigation efficiency, and climate resilience within Sri Lanka's Mahaweli River Basin. CCMG contributed advisory expertise in regulatory alignment, institutional strengthening, and safeguard compliance for subprojects under the program. The work included reviewing designs, facilitating environmental and social safeguard integration, and ensuring stakeholder engagement across affected districts. By improving water delivery infrastructure and governance, the program enhances agricultural productivity, secures livelihoods, and supports long-term water resource sustainability in one of Sri Lanka's most vital basins.",
@@ -52,7 +50,6 @@ const PROJECTS: Project[] = [
     title: "U.S. Embassy: New Diplomatic Facility (Colombo)",
     category: "Infrastructure",
     client: "U.S. Department of State (OBO)",
-    location: "Colombo, Sri Lanka",
     cardText: "High-security, international-standard diplomatic infrastructure delivery.",
     description:
       "CCMG was subcontracted by Caddell Construction Co., LLC to support the demolition and redevelopment of the former U.S. Embassy site in Colombo. Our scope focused on approvals, local compliance management, and stakeholder coordination, de-risking the works through permits, environmental and social due diligence, and community interface. By ensuring regulatory alignment and smooth collaboration with local authorities, CCMG enabled seamless progress on a project that demanded world-class safety. The redevelopment stands as a symbol of U.S.–Sri Lanka partnership and showcases CCMG’s strength in bridging global requirements with local execution.",
@@ -68,7 +65,6 @@ const PROJECTS: Project[] = [
     category: "Water Supply & Sanitation",
     client: "National Water Supply & Drainage Board (NWSDB)",
     funder: "ADB / World Bank program linkage",
-    location: "Mallavi, Sri Lanka",
     cardText: "Delivering safe, sustainable water for underserved communities in Mallavi.",
     description:
       "CCMG contributed to the Mallavi Urban Water Supply Scheme under the broader Water Supply and Sanitation Improvement Program. Our role focused on design review assistance, implementation coordination, and environmental and social safeguards compliance. The scheme expands potable water access to households and public facilities, reduces waterborne health risks, and improves resilience in an area with historic service gaps. Working with government agencies and donor partners, we supported quality control and field monitoring to keep delivery on schedule and within specification. The project demonstrates how local liaison and disciplined oversight translate large programs into real outcomes for families and businesses while meeting donor safeguard standards and national regulations.",
@@ -88,7 +84,6 @@ const PROJECTS: Project[] = [
     category: "Post-Disaster & Reconstruction",
     client: "Executing Agency & ADB",
     funder: "Asian Development Bank (Loan 2167 / Grant 0006-SRI)",
-    location: "Sri Lanka (coastal districts)",
     cardText: "Rebuilding lives and infrastructure after the 2004 tsunami.",
     description:
       "Following the 2004 Indian Ocean tsunami, CCMG provided the Team Leader and multidisciplinary experts to conduct an implementation review of ADB's TAARP program. Our scope covered technical and procurement audits, financial management, governance and M&E review, and social and environmental impact assessment. The phased reporting approach enabled real-time corrections during delivery, accelerating the return of housing, public services, and community infrastructure. TAARP showcased CCMG's ability to coordinate across agencies, contractors, and donors under intense timelines while maintaining rigor on safeguards and value-for-money—ultimately strengthening resilience for affected communities.",
@@ -102,7 +97,6 @@ const PROJECTS: Project[] = [
     category: "Water Supply & Sanitation",
     client: "Government of Sri Lanka / NWSDB",
     funder: "Asian Development Bank",
-    location: "Sri Lanka",
     cardText: "Strengthening governance and economic regulation for water services.",
     description:
       "In association with IDP Philippines, CCMG supported the drafting of amendments to the National Water Supply & Drainage Board Act to enable the Public Utilities Commission to function as an economic and technical regulator. Our work included legislative analysis, drafting support, consultation workshops, and awareness programs to prepare institutions and stakeholders for the transition. The result is a clearer framework for performance, tariffs, and oversight, helping improve service quality and sector accountability while aligning with international best practice and donor expectations.",
@@ -115,7 +109,6 @@ const PROJECTS: Project[] = [
     title: "Corporate Restructuring: Apparel & Tea",
     category: "Corporate & SME Development",
     client: "Private sector (Sri Lanka)",
-    location: "Western & Southern Provinces",
     cardText: "Improving competitiveness through mergers and operational restructuring.",
     description:
       "CCMG advised on two significant private-sector engagements: (1) the amalgamation of a medium-scale apparel manufacturer with a larger operator to realize economies of scale, streamline governance, and unlock exports growth; and (2) the operational and financial restructuring of a southern tea plantation and factory to improve yields, cost efficiency, and market positioning. Our approach combined strategic planning, financial modeling, and change management to deliver practical improvements in productivity and profitability—demonstrating CCMG's breadth across both development and corporate mandates.",
@@ -384,12 +377,6 @@ const ProjectModal = ({
               <div>
                 <h4 className="text-sm font-medium text-gray-500 mb-1">Contractor</h4>
                 <p className="text-gray-900">{project.contractor}</p>
-              </div>
-            )}
-            {project.location && (
-              <div>
-                <h4 className="text-sm font-medium text-gray-500 mb-1">Location</h4>
-                <p className="text-gray-900">{project.location}</p>
               </div>
             )}
             {project.year && (

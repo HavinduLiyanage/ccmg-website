@@ -201,7 +201,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl font-semibold text-primary-dark">Our Mission</h2>
               </div>
               <p className="text-neutral-dark-gray leading-relaxed mb-6">
-                Our mission is to bridge global expertise with local trust, enabling projects that are economically viable, socially responsible, and environmentally sustainable delivering lasting value and a better tomorrow for the well-being of Sri Lanka’s people
+              Our mission is to unite global expertise with local knowledge, delivering projects built on trust, integrity, and sustainability creating lasting value and a resilient, better tomorrow
               </p>
               <div className="space-y-3">
                 <div className="flex items-center gap-3">

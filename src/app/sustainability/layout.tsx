@@ -51,12 +51,7 @@ export default function SustainabilityLayout({
             "provider": {
               "@type": "Organization",
               "name": "CCMG",
-              "url": "https://ccmg.lk",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Colombo",
-                "addressCountry": "LK"
-              }
+              "url": "https://ccmg.lk"
             },
             "@graph": [
               {

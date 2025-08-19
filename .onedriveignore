@@ -1,0 +1,25 @@
+# Ignore Next.js build directories
+.next/
+out/
+build/
+
+# Ignore node modules
+node_modules/
+
+# Ignore package lock files
+package-lock.json
+
+# Ignore environment files
+.env*
+
+# Ignore cache directories
+.cache/
+.parcel-cache/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore OS files
+Thumbs.db
+Desktop.ini

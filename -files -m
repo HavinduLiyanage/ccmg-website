@@ -1,0 +1,9 @@
+warning: in the working copy of 'src/app/about/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/contact/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/projects/page.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/components/Footer.tsx', LF will be replaced by CRLF the next time Git touches it
+src/app/about/page.tsx
+src/app/contact/page.tsx
+src/app/projects/page.tsx
+src/app/sustainability/layout.tsx
+src/components/Footer.tsx
