@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // output: 'export', // Comment this out for development
   images: {
     unoptimized: true,
     domains: ['images.unsplash.com', 'unsplash.com'],
