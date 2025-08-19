@@ -1,0 +1,24 @@
+{
+  "name": "CCMG - Colombo Consultants & Management Group",
+  "short_name": "CCMG",
+  "description": "Sri Lanka's trusted advisory partner connecting insight to impact across PPP, sustainability, and digital transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F9FA",
+  "theme_color": "#0E5E4A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "productivity", "education"],
+  "lang": "en-US"
+}
