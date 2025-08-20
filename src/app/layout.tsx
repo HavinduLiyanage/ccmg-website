@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'CCMG - Colombo Consultants & Management Group',
     template: '%s | CCMG'
   },
-  description: 'Sri Lanka\'s trusted advisory partner connecting insight to impact across PPP, sustainability, and digital transformation. Expert consulting services for infrastructure, ESG, and strategic partnerships.',
+  description: 'CCMG is Sri Lanka\'s premier advisory partner, specializing in PPP projects, sustainability consulting, and digital transformation. We connect insight to impact with expert consulting services for infrastructure, ESG, and strategic partnerships. Contact us at +94 77 304 7315.',
   keywords: [
     'consultancy',
     'management',
@@ -94,6 +94,35 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0E5E4A" />
         <meta name="msapplication-TileColor" content="#0E5E4A" />
+        
+        {/* Structured Data for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Colombo Consultants & Management Group (CCMG)",
+              "url": "https://colomboconsultants.lk",
+              "logo": "https://colomboconsultants.lk/images/logo.png",
+              "description": "Sri Lanka's premier advisory partner specializing in PPP projects, sustainability consulting, and digital transformation.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "LK",
+                "addressLocality": "Colombo"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+94-77-304-7315",
+                "contactType": "customer service",
+                "availableLanguage": "English"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/ccmg-lk"
+              ]
+            })
+          }}
+        />
       </head>
       <body className="font-sans bg-neutral-white text-primary-dark">
         <Analytics />

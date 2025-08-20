@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://ccmg.lk/sitemap.xml
+Sitemap: https://colomboconsultants.lk/sitemap.xml
 
 # Disallow admin or private areas (if any)
 Disallow: /api/
