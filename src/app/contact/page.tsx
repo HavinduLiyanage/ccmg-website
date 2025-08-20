@@ -292,54 +292,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="bg-primary-light py-16">
-        <div className="section-container">
-          <motion.div
-            className="section-header"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-accent-green text-sm font-medium uppercase tracking-wide mb-2">FAQ</p>
-            <h2 className="section-title">Frequently Asked Questions</h2>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              {
-                question: 'What types of organizations do you work with?',
-                answer: 'We work with government agencies, NGOs, private companies, SMEs, and international organizations across various sectors.'
-              },
-              {
-                question: 'How long does a typical consulting project take?',
-                answer: 'Project duration varies based on scope and complexity, ranging from 3 months for strategic planning to 18+ months for large-scale implementations.'
-              },
-              {
-                question: 'Do you provide services outside Sri Lanka?',
-                answer: 'Yes, we work regionally across South Asia and have partnerships with organizations in India and other neighboring countries.'
-              },
-              {
-                question: 'What makes CCMG different from other consultancies?',
-                answer: 'Our Gold Standard certification, deep local expertise, proven track record, and commitment to sustainable impact set us apart.'
-              }
-            ].map((faq, index) => (
-              <motion.div
-                key={index}
-                className="card"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="font-semibold text-primary-dark mb-3">{faq.question}</h3>
-                <p className="text-neutral-dark-gray text-sm leading-relaxed">{faq.answer}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   )
 } 

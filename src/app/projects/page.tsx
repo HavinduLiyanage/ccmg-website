@@ -49,7 +49,7 @@ const PROJECTS: Project[] = [
     id: "us-embassy-colombo",
     title: "U.S. Embassy: New Diplomatic Facility (Colombo)",
     category: "Infrastructure",
-    client: "U.S. Department of State (OBO)",
+    client: "Caddell Construction Co, LLC",
     cardText: "High-security, international-standard diplomatic infrastructure delivery.",
     description:
       "CCMG was subcontracted by Caddell Construction Co., LLC to support the demolition and redevelopment of the former U.S. Embassy site in Colombo. Our scope focused on approvals, local compliance management, and stakeholder coordination, de-risking the works through permits, environmental and social due diligence, and community interface. By ensuring regulatory alignment and smooth collaboration with local authorities, CCMG enabled seamless progress on a project that demanded world-class safety. The redevelopment stands as a symbol of U.S.–Sri Lanka partnership and showcases CCMG’s strength in bridging global requirements with local execution.",

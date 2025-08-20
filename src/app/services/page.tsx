@@ -12,11 +12,11 @@ const services = [
     subtitle: 'Your in-country operator for market entry, compliance, and stakeholder access.',
     description: 'Your in-country operator for market entry, compliance, and stakeholder access.',
     features: [
-      'Market entry & go-to-market strategy',
       'Government & donor liaison; regulatory navigation',
       'Stakeholder mapping and relationship management',
+      'Local Expert Resourcing & On Ground Coordination (Bidding & Execution stage )',
       'Supplier/distributor vetting and onboarding',
-      'Local Expert Resourcing & On Ground Coordination (Bidding & Execution)'
+      'Market entry & go-to-market strategy',
     ],
     outputs: [
       'Country playbook + risk register',
@@ -32,7 +32,7 @@ const services = [
     description: 'Bankable projects through policy clarity and real stakeholder buy-in.',
     features: [
       'Pre-feasibility/options analysis; fiscal & risk screens',
-      'GRM design, consultations, and comms',
+      'Grievance Redress Mechanism (GRM) design, consultations, and comms',
       'Policy drafting and institutional strengthening'
     ],
     outputs: [
@@ -165,7 +165,7 @@ export default function ServicesPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              We help international partners to win and deliver high-value projects in Sri Lanka through strategic local partnerships and representation. From navigating government relations and policy advocacy to managing stakeholders and ensuring smooth execution, we turn opportunities in PPP, ESG, sustainability, and digital transformation into measurable success.
+              We help international partners to win and deliver high-value projects in Sri Lanka through strategic local partnerships and representation. From navigating government relations and policy advocacy to managing stakeholders and ensuring smooth execution, we turn opportunities in PPP, EPC, ESG, sustainability, and digital transformation into measurable success.
             </motion.p>
 
 
@@ -262,9 +262,9 @@ export default function ServicesPage() {
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Transformative{' '}
+              Our{' '}
               <span className="bg-gradient-to-r from-accent-green to-accent-dark bg-clip-text text-transparent">
-                Consulting Services
+                Services
               </span>
             </motion.h2>
             <motion.div
@@ -324,7 +324,7 @@ export default function ServicesPage() {
                                 className="flex items-start gap-3 p-3 bg-neutral-white/50 rounded-lg border border-neutral-medium-gray/30 hover:border-accent-green/20 transition-all duration-300"
                               >
                                 <CheckCircle className="w-4 h-4 text-accent-green flex-shrink-0 mt-1" />
-                                <span className="text-sm text-neutral-charcoal leading-relaxed">
+                                <span className="text-base text-neutral-charcoal leading-relaxed">
                                   {feature}
                                 </span>
                               </div>
@@ -383,14 +383,11 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { name: 'Government & Public Sector', icon: Building },
               { name: 'Water & Sanitation', icon: Target },
               { name: 'Transport & Urban Development', icon: Globe },
-              { name: 'Energy & Utilities', icon: Zap },
-              { name: 'Health & Education', icon: Users },
-              { name: 'Manufacturing & Agribusiness', icon: TrendingUp },
+              { name: 'Power and Energy', icon: Zap },
               { name: 'Tourism & Hospitality', icon: Target },
-              { name: 'Financial Services & Fintech', icon: Cpu },
+              { name: 'Telecommunication Infrastructure', icon: Cpu },
             ].map((industry, index) => {
               const IndustryIcon = industry.icon
               return (

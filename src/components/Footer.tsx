@@ -148,8 +148,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 lg:mt-10 pt-6 border-t border-white/10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div className="text-sm text-white/70">Built with integrity in Sri Lanka · Global standards, local trust</div>
-          <div className="flex items-center gap-2 text-sm text-white/80">
-            <Award className="w-4 h-4 text-accent-gold" />
+          <div className="text-sm text-white/80">
             <span>Gold Standard Partner</span>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-center sm:text-left">
