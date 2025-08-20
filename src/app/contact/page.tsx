@@ -8,8 +8,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Call Us',
-    details: ['+94 11 234 5678', '+94 77 123 4567'],
-    link: 'tel:+94112345678',
+    details: ['+94 77 304 7315'],
+    link: 'tel:+94773047315',
     linkText: 'Call Now'
   },
   {

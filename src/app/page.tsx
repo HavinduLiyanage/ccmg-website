@@ -706,7 +706,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-center gap-2 text-neutral-charcoal">
                 <Globe className="w-4 h-4 text-accent-green" />
-                <span className="text-sm">+94 11 234 5678</span>
+                <span className="text-sm">+94 77 304 7315</span>
               </div>
               <div className="flex items-center gap-2 text-neutral-charcoal">
                 <CheckCircle className="w-4 h-4 text-accent-green" />
