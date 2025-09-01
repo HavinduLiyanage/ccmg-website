@@ -33,7 +33,7 @@ const services = [
 const projects = [
   {
     id: 1,
-    title: 'US Embassy Construction Project',
+    title: 'US Embassy Project',
     sector: 'Strategic Advisory',
     image: '/images/projects/us embassy construction project.jpg',
     description: 'Strategic advisory for construction of new American embassy building in Sri Lanka. US Embassy construction project Colombo 2022.',
@@ -43,7 +43,7 @@ const projects = [
     title: 'Mallavi Urban Water Supply Scheme',
     sector: 'Infrastructure',
     image: '/images/projects/mallavil urban water supply scheme.jpg',
-    description: 'LK Water Supply and Sanitation Improvement Project: Construction of Mallavi Urban Water Supply Scheme in Mullaitivu District',
+    description: 'Water Supply and Sanitation Improvement Project: Construction of Mallavi Urban Water Supply Scheme in Mullaitivu District',
   },
   {
     id: 3,
@@ -475,7 +475,19 @@ export default function HomePage() {
       </section>
 
       {/* Sustainability Banner */}
-      <section className="relative bg-gradient-to-br from-accent-green via-accent-dark to-accent-forest text-white py-20">
+      <section className="relative bg-gradient-to-br from-accent-green via-accent-dark to-accent-forest text-white py-20 overflow-hidden">
+        {/* SDG Background Image - Bottom Right Corner */}
+        <div className="absolute bottom-4 right-4 w-80 h-80 opacity-15 pointer-events-none z-0">
+          <Image
+            src="/images/no-circle-sustainable-development-goal-1-no-poverty-sustainable-development-goals-united-nations-sustainability-united-nations-headq.png"
+            alt="Sustainable Development Goals"
+            width={320}
+            height={320}
+            className="object-contain"
+            priority={false}
+          />
+        </div>
+        
         <div className="section-container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left side - Icon and Title */}

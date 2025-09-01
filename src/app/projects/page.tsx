@@ -47,7 +47,7 @@ const PROJECTS: Project[] = [
   },
   {
     id: "us-embassy-colombo",
-    title: "U.S. Embassy: New Diplomatic Facility (Colombo)",
+    title: "U.S. Embassy: New Facility (Colombo)",
     category: "Infrastructure",
     client: "Caddell Construction Co, LLC",
     cardText: "High-security, international-standard diplomatic infrastructure delivery.",
